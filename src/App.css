@@ -1,42 +1,106 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root{
+  --bs-primary: rgb(250, 143, 71);
+  --bs-primary-rgb: 250, 143, 71;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.navbar-brand{
+  margin-right: 40px !important;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+  font-family: "Literata", serif;
+  position: relative;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+a{
+  color: black;
+  text-decoration: none;
 }
-
-.card {
-  padding: 2em;
+.p-80{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
-.read-the-docs {
-  color: #888;
+.carousel img {
+  height: 750px;
+  object-fit: cover;
+}
+.carousel-indicators [data-bs-target]{
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.carousel-caption{
+  color: black;
+}
+.hero-caption{
+  font-size: 80px !important;
+}
+.carousel-caption{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.btn-custome{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+.btn-custome:hover{
+  background-color: var(--bs-primary);
+    border: 1px solid var(--bs-primary);
+}
+.p-line{
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+.banner-text-1{
+  right: 5%;
+}
+.banner-text-2{
+  top: 5%;
+  right: 5%;
+}
+.banner-text-3{
+  left: 5%;
+  bottom: 5%;
+}
+.banner-text a{
+  transition: all 0.5s ease;
+}
+.banner-text-1 a:hover, .banner-text-2 a:hover, .banner-text-3 a:hover{
+  color: var(--bs-primary);
+}
+.title h2{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  width: 400px;
+  margin: 0px auto;
+}
+.banner{
+  height: 500px;
+  background: url(../src/assets/images/banner101.jpg);
+}
+.banner p, .banner h2, .discount-banner p{
+  letter-spacing: 3px;
+}
+.discount-banner{
+  height: 500px;
+  background: url(../src/assets/images/banner28.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.facilities{
+  background-color: #F4F4F4;
 }
