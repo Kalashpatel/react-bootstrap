@@ -55,7 +55,7 @@ export default function Navbar() {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn btn-custome" type="submit">
                 Search
               </button>
               <ul class="ms-5 d-flex gap-4 align-items-center">
