@@ -3,7 +3,7 @@ import React from "react";
 export default function BestsellerBanner(){
     return(
         <div className="banner p-80">
-            <div className="container mt-5 pt-5">
+            <div className="container pt-5">
                 <div className="row justify-content-center">
                     <div className="col-10">
                         <p className="m-0 ms-2 text-primary">MORDEN GLASSES</p>
